@@ -14,8 +14,6 @@ public class ShopManager : MonoBehaviour
     public GameObject confirmContainer;
     public GameObject insuficientContainer;
 
-    //public List<ItemSlot> slots;
-
     void Start()
     {
         itemBuy = new List<SlotShopManager>();
@@ -46,7 +44,7 @@ public class ShopManager : MonoBehaviour
     {
         item.id = id;
         player.GetComponent<CharacterController2D>().money += itemBuy[id-1].sellPrice;
-        //GameManager.instance.inventoryContainer.Remove(itemBuy[id-1].item);
+        GameManager.instance.inventoryContainer.Remove(itemBuy[id - 1].item);
     }
 
 }

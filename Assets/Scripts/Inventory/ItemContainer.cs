@@ -45,9 +45,17 @@ public class ItemContainer : ScriptableObject
             itemSlot.item = item;
     }
 
-    public void Remove(int id)
+    public void Remove(Item item)
     {
-        //.Clear();        
+        ItemSlot itemSlot = slots.Find(x => x.item == null);
+        if (itemSlot != null)
+        {
+            //itemSlot.item = item;
+            //Debug.Log(item);
+            //item = null;
+            //item.icon = newIcono;
+        }
+            
     }
 }
 

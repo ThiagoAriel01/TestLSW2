@@ -11,13 +11,5 @@ public class Item : ScriptableObject
     public Sprite icon;
     public int price;
     public int sellPrice;
-    public ClasS clasS;
-
-
-    public enum ClasS
-    {
-        Shoes,
-        Armor,
-        Coin
-    }
+    public string clasS;
 }

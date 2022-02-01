@@ -21,7 +21,7 @@ public class InventoryButton : MonoBehaviour, IPointerClickHandler
         icon.gameObject.SetActive(true);
         icon.sprite = slot.item.icon;
 
-        if (slot.item.stackable)
+        if (slot.item.stackable == true)
         {
             text.gameObject.SetActive(true);
             text.text = slot.count.ToString();
@@ -30,6 +30,7 @@ public class InventoryButton : MonoBehaviour, IPointerClickHandler
         {
             text.gameObject.SetActive(false);
         }
+
     }
 
     public void Clean()

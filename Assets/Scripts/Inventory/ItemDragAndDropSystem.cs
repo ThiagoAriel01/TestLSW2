@@ -73,6 +73,11 @@ public class ItemDragAndDropSystem : MonoBehaviour
         UpdateIcon();
     }
 
+    public Item Get()
+    {
+        return itemSlot.item;
+    }
+
     void UpdateIcon()
     {
         if (itemSlot.item == null)

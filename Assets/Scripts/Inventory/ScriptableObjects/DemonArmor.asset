@@ -18,4 +18,4 @@ MonoBehaviour:
   icon: {fileID: 21300000, guid: a7af546ccdf43e14dbc368f143c3541a, type: 3}
   price: 55
   sellPrice: 35
-  clasS: 1
+  clasS: Armor
