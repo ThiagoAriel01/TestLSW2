@@ -8,8 +8,16 @@ public class ItemDragAndDropSystem : MonoBehaviour
 {
     [SerializeField] ItemSlot itemSlot;
     [SerializeField] GameObject dragIcon;
+    public ShopManager shopManager;
     RectTransform iconTransform;
     Image itemIconImage;
+    GameObject confirmPanel;
+
+
+    void Awake()
+    {
+        confirmPanel = shopManager.confirmContainer;
+    }
 
     void Start()
     {
@@ -39,19 +47,29 @@ public class ItemDragAndDropSystem : MonoBehaviour
 
     internal void OnClick(ItemSlot itemSlot)
     {
-        if (this.itemSlot.item == null)
+        if (shopManager.gameObject.activeInHierarchy)
         {
-            this.itemSlot.Copy(itemSlot);
-            itemSlot.Clear();
+            confirmPanel.SetActive(true);
+            confirmPanel.GetComponent<BuyConfirm>().id = itemSlot.item.id;
+            confirmPanel.GetComponent<BuyConfirm>().buy = false;
         }
         else
         {
-            Item item = itemSlot.item;
-            int count = itemSlot.count;
+            if (this.itemSlot.item == null)
+            {
+                this.itemSlot.Copy(itemSlot);
+                itemSlot.Clear();
+            }
+            else
+            {
+                Item item = itemSlot.item;
+                int count = itemSlot.count;
 
-            itemSlot.Copy(this.itemSlot);
-            this.itemSlot.Set(item, count);
+                itemSlot.Copy(this.itemSlot);
+                this.itemSlot.Set(item, count);
+            }
         }
+        
         UpdateIcon();
     }
 

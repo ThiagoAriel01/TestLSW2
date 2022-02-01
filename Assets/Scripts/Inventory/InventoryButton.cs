@@ -8,14 +8,8 @@ public class InventoryButton : MonoBehaviour, IPointerClickHandler
 {
     [SerializeField] Image icon;
     [SerializeField] Text text;
-    //ItemDragAndDropSystem itemDrag;
 
     int myIndex;
-
-    void Awake()
-    {
-        //itemDrag = GameObject.GetComponent<ItemDragAndDropSystem>();
-    }
 
     public void SetIndex(int index)
     {

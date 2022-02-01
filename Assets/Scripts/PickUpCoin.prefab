@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 6001951603062890478}
   - component: {fileID: 6001951603062890477}
   m_Layer: 0
-  m_Name: PickUpItem
+  m_Name: PickUpCoin
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

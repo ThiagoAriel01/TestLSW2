@@ -83,8 +83,8 @@ public class DialogueSystem : MonoBehaviour
 
     void Conclude()
     {
-        Debug.Log("The dialogue has ended");
         Show(false);
+        GameManager.instance.shopSystem.Show();
     }
 
     void Show(bool v)

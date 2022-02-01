@@ -37,13 +37,25 @@ public class ItemContainer : ScriptableObject
 
         }
     }
+
+    public void Buy(Item item, int count = 1)
+    {
+        ItemSlot itemSlot = slots.Find(x => x.item == null);
+        if (itemSlot != null)
+            itemSlot.item = item;
+    }
+
+    public void Remove(int id)
+    {
+        //.Clear();        
+    }
 }
 
 [Serializable]
 public class ItemSlot
 {
     public Item item;
-    public int count;
+    public int count = 1;
 
     public void Copy(ItemSlot slot)
     {

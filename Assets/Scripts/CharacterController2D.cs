@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class CharacterController2D : MonoBehaviour
 {
@@ -10,7 +11,10 @@ public class CharacterController2D : MonoBehaviour
     public Vector2 lastMove;
     Animator anim;
     public bool isMoving;
-    
+    public int money = 1000;
+    [SerializeField] Text moneyText; 
+
+
     public float Speed { get => speed; set => speed = value; }
 
     void Awake()
@@ -38,6 +42,8 @@ public class CharacterController2D : MonoBehaviour
         }
         else
             anim.speed = 0;
+
+        moneyText.text = "$ " + money.ToString();
     }
 
     void FixedUpdate() => Move();

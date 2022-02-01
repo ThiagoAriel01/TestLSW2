@@ -15,4 +15,6 @@ public class GameManager : MonoBehaviour
     public ItemContainer inventoryContainer;
     public ItemDragAndDropSystem itemDragAndDrop;
     public DialogueSystem dialogueSystem;
+    public NPC_Shop shopSystem;
+    public ShopManager shopManager;
 }

@@ -6,6 +6,18 @@ using UnityEngine;
 public class Item : ScriptableObject
 {
     public string name;
+    public int id;
     public bool stackable;
     public Sprite icon;
+    public int price;
+    public int sellPrice;
+    public ClasS clasS;
+
+
+    public enum ClasS
+    {
+        Shoes,
+        Armor,
+        Coin
+    }
 }
