@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: DialogueShopkepper
   m_EditorClassIdentifier: 
   line:
-  - HI!
+  - HI! Im a seller.
+  - In this shop you can buy the better clothes to look espectacular.
   - Do you want see my merchandice?
   actor: {fileID: 11400000, guid: b729d70c764025240bbf7b841221c737, type: 2}

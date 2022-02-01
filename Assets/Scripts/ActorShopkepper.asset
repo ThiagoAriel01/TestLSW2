@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a6ec16f084ffdc4899ad6236e440386, type: 3}
   m_Name: ActorShopkepper
   m_EditorClassIdentifier: 
-  Name: Shopkepper
+  Name: Thiago
   portrait: {fileID: 21300000, guid: 55ba374d44b21d240a17812bd62ad33b, type: 3}
