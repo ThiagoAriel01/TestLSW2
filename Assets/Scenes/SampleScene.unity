@@ -19360,27 +19360,6 @@ MonoBehaviour:
   - {fileID: 1966365147}
   - {fileID: 207173869}
   - {fileID: 2113737467}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
 --- !u!114 &223317655
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -45797,6 +45776,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 921de5e76d405a4498488d76fa9e3f86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  character: {fileID: 1616171}
   pickUpItemPrefab: {fileID: 6001951603062890476, guid: 8f76785d1fe472449b56fc2b453d6498, type: 3}
 --- !u!4 &1705662294
 Transform:
@@ -46285,9 +46265,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7bf13c4cdf3dcce45872c47ef3569a55, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pickUpDrop: {fileID: 6001951603062890476, guid: 61a94259871a9914485fbdeaf149fa58, type: 3}
   dropCount: 1000
   spread: 0.7
+  item: {fileID: 11400000, guid: 42eb4665011592e4b9c242f17e66248d, type: 2}
   openChest: {fileID: 2105440001}
   closeChest: {fileID: 2086351083}
 --- !u!61 &1747282502
